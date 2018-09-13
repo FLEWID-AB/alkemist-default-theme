@@ -1,0 +1,8 @@
+*gem
+*swp
+.DS_store
+.sass-cache
+contrib/*.css
+node_modules
+public
+tmp

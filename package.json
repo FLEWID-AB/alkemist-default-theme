@@ -1,0 +1,36 @@
+{
+  "name": "alkemist-default-theme",
+  "version": "1.0.0",
+  "description": "Theme for Alkemist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@chenfengyuan/datepicker": "^1.0.0-beta",
+    "@coreui/coreui": "^2.0.6",
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "perfect-scrollbar": "^1.4.0",
+    "popper.js": "^1.14.3",
+    "select2": "^4.0.6-rc.1"
+  },
+  "devDependencies": {
+    "chalk": "^2.4.1",
+    "@fortawesome/fontawesome-free": "^5.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FLEWID-AB/alkemist-default-theme.git"
+  },
+  "keywords": [
+    "alkemist",
+    "theme"
+  ],
+  "author": "Flewid AB",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FLEWID-AB/alkemist-default-theme/issues"
+  },
+  "homepage": "https://github.com/FLEWID-AB/alkemist-default-theme#readme"
+}
