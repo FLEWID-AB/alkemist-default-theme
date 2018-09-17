@@ -5,7 +5,7 @@ $fa-font-path: '../fonts';
 @import "bootstrap";
 @import "coreui-standalone";
 @import "node_modules/select2/src/scss/core";
-@import "datepicker";
+@import "datepicker.scss";
 @import "header";
 @import "index";
 @import "panels";
@@ -17,4 +17,70 @@ $fa-font-path: '../fonts';
 
 .main-content {
   margin-top: 1rem;
+}
+
+.app-header {
+  background: #000;
+  border: 0;
+}
+
+.sidebar {
+  background: rgb(0,0,0);
+  padding-top: 1rem;
+  nav {
+    .nav-item {
+      margin-bottom: 1rem;
+      a.nav-link {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: .6rem;
+        color: rgba(255,255,255,.7);
+        letter-spacing: 1px;
+        display: flex;
+        vertical-align: middle;
+        span {
+          line-height: 1.75;
+        }
+        i {
+          font-size: 1rem;
+          margin-right: .5rem;
+          color: #888;
+        }
+        &:hover {
+          background: none;
+          color: rgba(255,255,255,1);
+        }
+        &.nav-dropdown-toggle:before {
+          font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f104";
+          background-image: none;
+          margin-top: -.5rem;
+          // content: "\f104";
+          // font-family: "Font Awesome Free";
+        }
+      }
+      .nav-dropdown-items {
+        li.nav-item  {
+          margin-bottom: 0;
+          a.nav-link {
+            margin-bottom: 0;
+            padding: .5rem 1rem;
+            color: rgba(255,255,255,.7);
+            &:hover {
+              background: none;
+              color: rgba(255,255,255,1);
+            }
+          }
+        }
+      }
+      &.open {
+        // a.nav-dropdown-toggle:before {
+        //   color: #fff;
+        // }
+        .nav-dropdown-items {
+          padding-bottom: 1rem;
+          border-bottom: 1px solid rgb(23,23,23);
+        }
+      }
+    }
+  }
 }
