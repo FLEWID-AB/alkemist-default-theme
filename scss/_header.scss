@@ -3,3 +3,12 @@
     max-height: $navbar-height - 20;
   }
 }
+
+h1 {
+  &.small-header {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 3px;
+  }
+}
