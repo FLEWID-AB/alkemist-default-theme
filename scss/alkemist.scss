@@ -1,11 +1,11 @@
 @import "variables";
 $fa-font-path: '../fonts';
-@import "fontawesome";
-@import "solid";
-@import "bootstrap";
-@import "coreui-standalone";
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/@coreui/coreui/scss/coreui-standalone";
 @import "node_modules/select2/src/scss/core";
-@import "datepicker.scss";
+@import "node_modules/@chenfengyuan/datepicker/src/css/datepicker.scss";
 @import "header";
 @import "index";
 @import "panels";
