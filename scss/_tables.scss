@@ -12,30 +12,35 @@
 .card {
   table.table {
     margin-bottom: 0;
-    // tr:first-child {
-    //   td, th {
-    //     border-top: none;
-    //     border: none;
-    //   }
-    // }
-    // padding-left: 5px;
-    // padding-right: 5px;
     th, td {
       border: none;
     }
     tbody {
       tr {
-        // border-radius: 5px;
-        // border-bottom: 10px solid transparent;
+        &.clickable-row {
+          cursor: pointer;
+          &:hover {
+            background-color: $primary;
+            td, td * {
+              color: #fff;
+            }
+            td i {
+              &:hover {
+                color: $component-active-bg;
+              }
+              &:active {
+                color: $primary;
+              }
+            }
+          }
+          &:active {
+            background: $component-active-bg;
+            td, td * {
+              color: #fff;
+            }
+          }
+        }
         &:hover {
-          // border-color: transparent;
-          // background-image: linear-gradient(
-          //   #fff,
-          //   #fafcfe
-          // );
-
-          // // background: none;
-          // box-shadow: inset 0 0 3px rgba(6,7,8,.2);
           td {
             border-color: transparent;
           }

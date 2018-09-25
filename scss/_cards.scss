@@ -1,0 +1,55 @@
+.info-cards {
+  h3 {
+    margin-bottom: 0;
+  }
+
+  .label {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: .6rem;
+    display: inline;
+    float: left;
+    line-height: 24px;
+    color: $grey;
+  }
+  .attribute {
+    // color: $grey;
+    font-size: .8rem;
+    line-height: 24px;
+  }
+  .list-group-item {
+    border-color: transparent;
+
+    .col,
+    [class*="col-"]{
+      // padding-left: 0;
+      padding-right: 0;
+    }
+
+    .label {
+      padding-right: .8rem;
+    }
+
+    &:hover {
+      background: $primary;
+      border-color: $primary;
+      .attribute {
+        color: #fff;
+        font-weight: 900;
+      }
+      .label {
+        color: $gray-300;
+      }
+    }
+  }
+}
+
+.card-header {
+  color: #fff;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  font-size: .8rem;
+  font-weight: 500;
+  padding: .5rem 1.25rem;
+  text-align: right;
+}

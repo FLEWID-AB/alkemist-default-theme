@@ -1,0 +1,107 @@
+.sidebar {
+  padding-top: 1rem;
+  nav {
+    .nav-item {
+      margin-bottom: 1rem;
+      a.nav-link {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: .6rem;
+        // color: rgba(255,255,255,.7);
+        letter-spacing: 1px;
+        display: flex;
+        vertical-align: middle;
+        line-height: 16px;
+        i {
+          font-size: 1rem;
+          margin-right: .5rem;
+          display: inline-block;
+          width: 25px;
+          text-align: center;
+          height: 16px;
+        }
+        &:hover {
+          background: none;
+        }
+        &.nav-dropdown-toggle:before {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f104";
+          background-image: none;
+          margin-top: -.5rem;
+        }
+      }
+      .nav-dropdown-items {
+        li.nav-item  {
+          padding: 2px 5px 2px 0;
+          margin-bottom: 0;
+          position: relative;
+          &:before {
+            @include transition();
+            opacity: 0;
+            z-index: -1;
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 0;
+            right: 5px;
+            bottom: 2px;
+            border-left-color: #000;
+            border-top-right-radius: 32px;
+            border-bottom-right-radius: 32px;
+            background: #fff;
+            border-left: 3px solid #000;
+          }
+          &:hover {
+            &:before {
+              opacity: 1;
+            }
+          }
+          &:active {
+            &:before {
+              opacity: 1;
+            }
+          }
+          a.nav-link {
+            z-index: 99;
+            &:before {
+              font-family: "Font Awesome 5 Free";
+              font-weight: 900;
+              content: "\f192";
+              display: inline-block;
+              color: #000;
+              font-size: .25rem;
+              float: left;
+              width: 25px;
+              height: 16px;
+              margin-right: .5rem;
+              text-align: center;
+            }
+            text-transform: none;
+            margin-bottom: 0;
+            padding: .5rem 1rem;
+          }
+        }
+      }
+      &.open {
+        .nav-dropdown-items  {
+          .open {
+            &:before {
+              opacity: 1;
+              border-left-color: $pink;
+              color: $pink;
+            }
+          }
+          a.nav-link.active {
+            background: none;
+            color: $pink;
+            font-weight: 700;
+            &:before {
+              color: $pink;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.page-actions {
+  a {
+    font-size: .8rem;
+    font-weight: 500;
+    // background: $primary;
+    border: 2px solid $primary;
+    display: inline-block;
+    border-radius: $border-radius;
+    color: $primary;
+    // height: 30px;
+    line-height: $input-height-inner-sm;
+    border-radius: $input-height-inner-sm;;
+    padding: 0;
+    padding-left:   .5rem;
+    padding-right:  .5rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin-right: .5rem;
+    &:hover {
+      background: $primary;
+      color: #fff;
+    }
+    &:active {
+      background: $primary;
+      border-color: $primary;
+    }
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

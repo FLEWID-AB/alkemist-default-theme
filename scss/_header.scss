@@ -1,14 +1,27 @@
 .app-header {
-  #main-logo {
-    max-height: $navbar-height - 20;
-  }
-}
+  background: rgba(33,37,41, .9);
 
-h1 {
-  &.small-header {
-    font-size: 2rem;
+  .navbar-brand {
+    color: #fff;
+    font-weight: 500;
+    font-size: .8rem;
     text-transform: uppercase;
-    font-weight: 200;
-    letter-spacing: 3px;
+    width: 300px;
+    justify-content: left;
+    padding-left: 1rem;
+    img {
+      height: 60%;
+    }
+  }
+
+  .navbar-nav {
+    margin-right: 30px !important;
+    .nav-item {
+      font-size: .8rem;
+      font-weight: 500;
+      a {
+        color: #fff;
+      }
+    }
   }
 }

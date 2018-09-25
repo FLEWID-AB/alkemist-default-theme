@@ -38,10 +38,27 @@ input[type=text], input[type=password], input[type=email] {
   padding-left: 10px;
 }
 
-.input-group-sm {
-
+.input-group {
+  .form-control.checkboxes {
+    min-height: calc(2.25rem + 4px);
+    height: auto;
+    border-top-right-radius: calc(2.25rem + 4px);
+    border-bottom-right-radius: calc(2.25rem + 4px);
+    display: flex;
+    align-items: center;
+    .custom-checkbox {
+      display: flex;
+      align-items: center;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .custom-control-label {
+      &:before, &:after {
+        top: -.1rem;
+      }
+    }
+  }
 }
-
 .form-group {
   .input-group,
   .input-group-sm,
