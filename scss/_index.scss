@@ -18,7 +18,23 @@
   }
 }
 
-.pagination {
+.pagination-row {
   font-size: .8rem;
-  justify-content: flex-end;
+  justify-content: stretch;
+}
+ul.per-page-nav {
+  list-style: none;
+  text-align: right;
+  li {
+    font-weight: bold;
+    display: inline-block;
+    border-right: 1px solid;
+    padding: 0 .5rem;
+    a {
+      font-weight: normal;
+    }
+    &:last-child {
+      border-right: none;
+    }
+  }
 }
