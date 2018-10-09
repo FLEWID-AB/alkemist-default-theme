@@ -1,52 +1,54 @@
-$aside-menu-width:      300px;
-$aside-menu-bg:         transparent;
-$aside-menu-borders:    none;
+// $aside-menu-bg:         transparent;
+// $aside-menu-borders:    none;
 
-$primary:             #212529;
-$body-bg:             #e4e5e6;
-$grey:                rgb(80,80,80);
-$pink:                  #FB497C;
+$primary:             #212529 !default;
+// $body-bg:             #e4e5e6;
+$gray:                rgb(80,80,80) !default;
+// $pink:                  #FB497C;
 
-$border-radius:         5px !default;
-$border-radius-lg:      5px !default;
-$border-radius-sm:      5px !default;
+// $border-radius:         5px !default;
+// $border-radius-lg:      5px !default;
+// $border-radius-sm:      5px !default;
 
-$card-border-width:             0;
-$card-cap-bg:                   $primary;
+// $card-border-width:             0;
+// $card-cap-bg:                   $primary;
 
-$nav-link-padding-y:            .25rem !default;
-$nav-link-padding-x:            .25rem !default;
-$nav-tabs-border-radius:        0;
-$nav-tabs-border-width:         0;
+// $nav-link-padding-y:            .25rem !default;
+// $nav-link-padding-x:            .25rem !default;
+// $nav-tabs-border-radius:        0;
+// $nav-tabs-border-width:         0;
 
-$input-group-addon-border-color:#e8ecf0;
-$input-group-addon-bg:           $input-group-addon-border-color;
-$input-border-color:             $input-group-addon-border-color;
-$input-border-radius-sm:         1.625rem;
-$input-btn-border-width:         2px;
-$input-btn-focus-color:          $primary;
-$input-btn-focus-width:         0;
-$input-focus-border-color:      $primary;
+// $input-group-addon-border-color:#e8ecf0;
+// $input-group-addon-bg:           $input-group-addon-border-color;
+// $input-border-color:             $input-group-addon-border-color;
+// $input-border-radius-sm:         1.625rem;
+// $input-btn-border-width:         2px;
+// $input-btn-focus-color:          $primary;
+// $input-btn-focus-width:         0;
+// $input-focus-border-color:      $primary;
 
-// Core UI Variables
-$navbar-bg:                     rgba(0,0,0,0);
+// // Core UI Variables
+// $navbar-bg:                     rgba(0,0,0,0);
 
-$sidebar-nav-link-active-bg:    rgba(255,255,255,.5);
-// $sidebar-nav-link-active-bg:    rgb(255,255,255);
-$sidebar-bg:                    rgba(0,0,0,0);
-$sidebar-form-bg:               rgba(0,0,0,0);
+// $sidebar-nav-link-active-bg:    rgba(255,255,255,.5);
+// // $sidebar-nav-link-active-bg:    rgb(255,255,255);
+// $sidebar-bg:                    rgba(0,0,0,0);
+// $sidebar-form-bg:               rgba(0,0,0,0);
 
-$sidebar-nav-dropdown-color:    rgb(0,0,0);
-$sidebar-nav-link-active-color: rgb(0,0,0);
-$sidebar-nav-link-color:        rgb(80,80,80);
-$sidebar-nav-link-hover-color:  rgb(0,0,0);
-$sidebar-nav-dropdown-bg:       rgba(255,255,255, 0);
-// $sidebar-nav-dropdown-bg:       rgba(255,255,255, .5);
+// $sidebar-nav-dropdown-color:    rgb(0,0,0);
+// $sidebar-nav-link-active-color: rgb(0,0,0);
+// $sidebar-nav-link-color:        rgb(80,80,80);
+// $sidebar-nav-link-hover-color:  rgb(0,0,0);
+// $sidebar-nav-dropdown-bg:       rgba(255,255,255, 0);
+// // $sidebar-nav-dropdown-bg:       rgba(255,255,255, .5);
 
-$table-border-color:            #f8fbfe;
-$component-active-bg:           #FB497C;
+// $table-border-color:            #f8fbfe;
+$table-row-hover-bg:            $primary !default;
+$table-row-hover-color:         #fff !default;
+$table-row-active-bg:           lighten($primary, 20) !default;
+$table-row-active-color:        #fff !default;
 
 
-// fonts
-$font-size-sm:                  .75rem;
+// // fonts
+// $font-size-sm:                  .75rem;
 
