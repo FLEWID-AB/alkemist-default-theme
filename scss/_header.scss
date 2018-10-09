@@ -22,6 +22,11 @@
       a {
         color: #fff;
       }
+      .dropdown-menu {
+        a {
+          color: $primary;
+        }
+      }
     }
-  }
+  }  
 }
